@@ -30,5 +30,5 @@ static ErlNifFunc nif_funs[] =
 	    {"nif", 2, crc32c_nif}
 };
 
-ERL_NIF_INIT(crc32cer, nif_funs, on_load, NULL, NULL, NULL);
+ERL_NIF_INIT(crc32c, nif_funs, on_load, NULL, NULL, NULL);
 

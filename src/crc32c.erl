@@ -5,7 +5,7 @@
 -on_load(init/0).
 
 -ifndef(APPLICATION).
--define(APPLICATION, crc32cer).
+-define(APPLICATION, crc32c).
 -endif.
 
 -spec init() -> ok.
