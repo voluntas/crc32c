@@ -1,4 +1,4 @@
-# crc32cer - CRC32-C Erlang NIF
+# crc32c - CRC32-C Erlang NIF
 
 This is a clone of [https://github.com/edenhill/librdkafka](https://github.com/edenhill/librdkafka) with only crc32-c related code retained.
 
