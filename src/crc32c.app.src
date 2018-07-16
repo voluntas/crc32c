@@ -1,5 +1,5 @@
 { application
-, crc32cer
+, crc32c
 , [ {description,"CRC32-C as nif for Erlang"}
   , {vsn,"0.1.0"}
   , {registered,[]}
@@ -7,10 +7,9 @@
   , {env,[]}
   , {modules,[]}
   , {licenses,["Apache License 2.0"]}
-  , {links,[{"Github","https://github.com/zmstone/crc32cert .git"}]}
+  , {links,[{"Github","https://github.com/voluntas/crc32c .git"}]}
   , {build_tools,["make","rebar","rebar3"]}
-  , {files,["c_src/*.h","c_src/*.c", "rebar.config",
-            "src", "erlang.mk","Makefile"]}
+  , {files,["c_src/*.h","c_src/*.c", "rebar.config", "src"]}
   ]
 }.
 

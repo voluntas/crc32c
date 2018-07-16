@@ -1,5 +1,4 @@
-
--module(crc32cer).
+-module(crc32c).
 
 -export([nif/1, nif/2]).
 
@@ -20,7 +19,7 @@ nif(IoData) ->
 
 -spec nif(integer(), iodata()) -> non_neg_integer().
 nif(_Acc, _IoData) ->
-  erlang:nif_error({crc32cer_nif_not_loaded, so_path()}).
+  erlang:nif_error({crc32c_nif_not_loaded, so_path()}).
 
 -spec so_path() -> string().
 so_path() ->
@@ -36,7 +35,7 @@ so_path() ->
       Dir ->
         Dir
     end,
-  filename:join([PrivDir, "crc32cer"]).
+  filename:join([PrivDir, "crc32c"]).
 
 -ifdef(TEST).
 

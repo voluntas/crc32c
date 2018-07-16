@@ -7,7 +7,7 @@ Then added Erlang NIF support.
 ## Usage
 
 ```
-crc32cer:nif(Iodata).
-crc32cer:nif(Acc, Iodata).
+crc32c:nif(Iodata).
+crc32c:nif(Acc, Iodata).
 ```
 
