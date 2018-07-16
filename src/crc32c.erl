@@ -47,14 +47,7 @@ basic_test_() ->
   [
    {"0", fun() -> ?assertEqual(0, nif(<<>>)) end},
    {"1-9", fun() -> ?assertEqual(16#e3069283, nif("123456789")) end},
-   {"a", fun() -> ?assertEqual(16#c1d04330, nif("a")) end},
-   {"license", fun() -> ?assertEqual(license_crc(), nif(license_txt())) end},
-   {"acc",
-     fun() ->
-         Bytes = license_txt(),
-         Crc = lists:foldl(fun(B, Acc) -> nif(Acc, [B]) end, 0, Bytes),
-         ?assertEqual(license_crc(), Crc)
-     end}
+   {"a", fun() -> ?assertEqual(16#c1d04330, nif("a")) end}
   ].
 
 -endif.
