@@ -48,9 +48,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-#ifndef _MSC_VER
-#include <unistd.h>
-#endif
+#include <string.h>
 
 #include "rdendian.h"
 #include "crc32c.h"
