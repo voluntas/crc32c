@@ -1,0 +1,10 @@
+{application, crc32c, [
+   {description, "CRC32-C as nif for Erlang"},
+   {vsn, "0.3.0"},
+   {registered, []},
+   {applications, [kernel, stdlib]},
+   {env, []},
+   {modules, []},
+   {licenses, ["Apache License 2.0"]}
+  ]
+}.
